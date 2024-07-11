@@ -1,14 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Chandi Cat</title>
-    <meta name="description" content="Chandi CTO official website">
-    <meta name="title" content="Chandi Cat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+    <title>Chandi the Cat</title>
     <meta property="og:title" content="Chandi CTO">
     <meta property="og:description" content="Official website of the official Chandi CTO.">
     <meta property="og:image" content="https://chandi.meme/chandi.jpeg">
@@ -20,210 +16,278 @@
     <meta name="twitter:description" content="Official website of the official Chandi CTO.">
     <meta name="twitter:image" content="https://chandi.meme/chandi.jpeg">
 
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url("chandi-extended.jpg") no-repeat center top / cover;
-            background-attachment: fixed;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        body.dark-mode {
-            background-color: #333;
-            color: #f4f4f9;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #4A90E2;
-            margin-bottom: 20px;
-        }
-        h2 {
-            margin-top: 4rem;
-            font-size: 2rem;
-            margin-bottom: 0px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        a {
-            color: #4A90E2;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: none;
-        }
-        .icon a:hover {
-            text-decoration: none;
-        }
-        .icon:hover {
-        transform: scale(1.1);
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mobland - Mobile App Landing Page Template">
 
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            max-width: 1080px;
-            text-align: center;
-            transition: background-color 0.3s;
-            margin-top: 20%;
-            margin-bottom: 5%;
-        }
-        body.dark-mode .container {
-            background-color: #444;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .icon-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e9e9e9;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
-        }
-        body.dark-mode .icon {
-            background-color: #333;
-        }
-        .icon i {
-            font-size: 40px;
-            color: #4A90E2;
-        }
-        .copyable {
-            cursor: pointer;
-            color: #4A90E2;
-            background-color: #f4f4f9;
-            padding: 5px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-            word-break: break-all;
-            white-space: normal;
-        }
-        .copyable:hover {
-            background-color: #e4e4e9;
-        }
-        body.dark-mode .copyable {
-            background-color: #555;
-        }
-        .toggle-btn {
-            cursor: pointer;
-            padding: 10px;
-            margin: 20px;
-            background-color: transparent;
-            border: none;
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            font-size: 24px;
-            color: #4A90E2;
-            transition: color 0.3s, transform 0.3s;
-        }
-        .toggle-btn:hover {
-            transform: scale(1.1);
-        }
-        .toggle-btn:active {
-            transform: scale(0.9);
-        }
-        body.dark-mode .toggle-btn {
-            color: #f4f4f9;
-        }
-        .chandi-memes {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        }
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
 
-        .chandi-memes img {
-        width: 100%;
-        height: auto;
-        display: block;
-        }
-         .center-tweet {
-        display: flex;
-        justify-content: center;
-        }
-
-        @media (max-width: 767px) {
-        body {
-            background: url("chandi-extended.jpg") no-repeat center top / auto;
-            background-attachment: fixed;
-        }
-         .container {
-            max-width: 90%;
-            margin-top: 90vw;
-         }    
-        .icon-grid, .chandi-memes {
-        grid-template-columns: repeat(2, 1fr);
-        }
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-    <button class="toggle-btn" id="darkModeToggle">
-        <i id="toggleIcon" class="fas fa-moon"></i>
-    </button>
-    <div class="container">
-        <h1>Ticker: $CHANDI</h1>
-        <p>Contract Address: <span class="copyable" id="copyCA">5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump</span></p>
-        
-        <div class="icon-grid">
-            <a href="https://x.com/ChandiCTO" target="_blank" class="icon">
-                <i class="fab fa-x"></i>
-            </a>
-            <a href="https://t.me/chandiportal" target="_blank" class="icon">
-                <i class="fab fa-telegram"></i>
-            </a>
-            <a href="https://github.com/chandicat/Chandi" target="_blank" class="icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://dexscreener.com/solana/9wekpl7vu1crkafj8oiexem6qkgzgodlvgu2psselmwb" target="_blank" class="icon">
-                <i class="fas fa-chart-line"></i>
-            </a>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+        <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">CHANDI</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#why">WHY CHANDI?</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contract">CONTRACT</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#history">HISTORY</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#memes">MEMES</a> </li>
+                                <li class="nav-item"><a target="_blank" href="https://jup.ag/swap/SOL-5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Buy $CHANDI</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>Chandi the Cat</h1>
+            <p class="tagline">i have so many photos of them, my phone recognizes $billy & $wif as my pets lmao, alongside my actual cat - @bsol_x</p>
+        </div>
+        <div class="desktop img-holder mt-3"><img src="images/chandi-site-header.png" alt="phone" class="img-fluid"></div>
+        <div class="mobile img-holder mt-3"><img src="images/chandi-site-mobile.png" alt="phone" class="img-fluid"></div>
+    </header>
+
+    <div class="client-logos my-3 grayscale">
+        <div class="container text-center">
+            <img src="images/as-seen-on.png" alt="client logos" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="section light-bg" id="why">
+
+
+        <div class="container">
+
+            <div class="section-title">
+                <small>HIGHLIGHTS</small>
+                <h3>Why you will love Chandi</h3>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">She's a cat</h4>
+                                    <p class="card-text">She's an actual cat owned by bsol_x. It's one of her beloved cat as featured on her iPhone screenshot.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Dev Jeeted</h4>
+                                    <p class="card-text">If the dev jeets on the first hour in pump.fun, it's usually a bullish signal! Just like Billy!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Secure</h4>
+                                    <p class="card-text">Liquidity is 100% burned. There's 0 tax. 12.5% of the supply was also burned by bsol_x herself!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-<h2>Community memes</h2>
+
+
+    </div>
+    <!-- // end .section -->
+    <div class="section" id="contract">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Where to buy Chandi?</h2>
+                    <p class="mb-4">$CHANDI is available in Jupiter, Raydium, Bullx, Photon, Trojan, and many more DEXs and aggregators. You can even buy it directly using your favorite Solana wallet, like Phantom or Solflare!</p>
+                    <p class="mb-4">Just make sure you're using the correct CA because there are many copycats out there: <span class="copyable" id="copyCA">5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump</span></p> 
+                    <a target="_blank" href="https://bullx.io/terminal?chainId=1399811149&address=5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump" class="btn btn-primary">Buy on Bullx.io</a>
+                    <a target="_blank" href="https://jup.ag/swap/SOL-5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump" class="btn btn-primary">Buy on Jupiter</a>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section light-bg" id="history">
+        <div class="container">
+            <div class="section-title">
+                <small>HISTORY</small>
+                <h3>A brief history of Chandi's lore</h3>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#birth">Birth</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#dumped">Dumped</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#burned">Burned</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#frontran">Bonded</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="birth">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>How it started?</h2>
+                            <p class="lead">b.sol publicly shared photos of billy and wif, alongside her actual pet.</p>
+                            <p>The tweet had over 18,000 views and 200+ likes, more then 30 people interacted and asking what's the name of her pet!</p>                   
+                        </div>
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i have so many photos of them, my phone recognizes <a href="https://twitter.com/search?q=%24billy&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$billy</a> &amp; <a href="https://twitter.com/search?q=%24wif&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$wif</a> as my pets lmao <br><br>alongside my actual cat <a href="https://t.co/fqubwLldWm">pic.twitter.com/fqubwLldWm</a></p>&mdash; b.sol (@bsol_x) <a href="https://twitter.com/bsol_x/status/1810433045494714370?ref_src=twsrc%5Etfw">July 8, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="dumped">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>It happened so fast!</h2>
+                            <p class="lead">A few seconds after the tweet, somebody created Chandi on pump.fun!</p>
+                            <p>Everyone was asking for b.sol's cat's name, and she replied Chandi with picture of Chandi on the same thread where she featured the photos of billy, wif and chandi.</p>
+                            <p>It was immediately pumped, then dumped. Dev jeeted in just a few seconds. MummyNinja then asked if can we CTO this coin at 3k marketcap. A few hours later...
+                            </p>
+                        </div>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">found it. can we cto this? lol! <a href="https://t.co/HV13UkVUh3">pic.twitter.com/HV13UkVUh3</a></p>&mdash; Mummy Ninja 🉐 (@MummyNinj) <a href="https://twitter.com/MummyNinj/status/1810482644817506806?ref_src=twsrc%5Etfw">July 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="burned">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>12.5% supply burn</h2>
+                            <p class="lead">The pet owner bought the supply as a joke and burned it! </p>
+                            <p>Yep, bsol herself bought CHANDI, and burned all her $chandi shares. It pumped near 1M, then it dumped back to sub 100k marketcap.</p>
+                            </p>
+                            <p>Degens on pump.fun were in awe, thinking it was dead, but it suddenly went to Raydium. Hundreds missed generational wealth, once again!</p>
+                        </div>
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i picked up 12.5% on pump as a joke but have burnt it all<br><br>idek what’s happening but enjoy profiting off my cat i guess <a href="https://t.co/33ew8gye5O">pic.twitter.com/33ew8gye5O</a></p>&mdash; b.sol (@bsol_x) <a href="https://twitter.com/bsol_x/status/1810490546764353723?ref_src=twsrc%5Etfw">July 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="frontran">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <img src="images/chandi-dexscreener.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div>
+                            <h2>Front Ran Dexscreener!</h2>
+                            <p class="lead">After it bonded and migrated to Raydium, somebody else added a fake TG group that can steal your account!</p>
+                            <p>The community was so excited when it reached 100% bonding curve on pump.fun and reached Raydium. People joined the fake TG that was added by someone who wants to steal Telegram accounts. There was a prompt to enter and verify your phone number when you join the phishing TG link.
+                            </p>
+                            <p>The community of chads lead by @MysticMoolah on X created the TG, X, and paid for Dexscreener. Chandi CTO continues to grind on X 24/7. The rest is history...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section" id="memes">
+        <div class="container">
+            <div class="section-title">
+                <small>We love to meme!</small>
+                <h3>Community Memes</h3>
+            </div>
+
   <div class="chandi-memes">
-        <img src="chandi-meme-1.jpg" alt="Chandi Meme 1">
-        <img src="chandi-meme-2.jpg" alt="Chandi Meme 2">
-        <img src="chandi-meme-3.jpg" alt="Chandi Meme 3">
-        <img src="chandi-meme-4.jpg" alt="Chandi Meme 4">
-        <img src="chandi-meme-5.jpg" alt="Chandi Meme 5">
-        <img src="chandi-meme-6.jpg" alt="Chandi Meme 6">
-        <img src="chandi-meme-7.jpg" alt="Chandi Meme 7">
-        <img src="chandi-meme-8.jpg" alt="Chandi Meme 8">
+        <img src="images/chandi-meme-1.jpg" alt="Chandi Meme 1">
+        <img src="images/chandi-meme-2.jpg" alt="Chandi Meme 2">
+        <img src="images/chandi-meme-3.jpg" alt="Chandi Meme 3">
+        <img src="images/chandi-meme-4.jpg" alt="Chandi Meme 4">
+        <img src="images/chandi-meme-5.jpg" alt="Chandi Meme 5">
+        <img src="images/chandi-meme-6.jpg" alt="Chandi Meme 6">
+        <img src="images/chandi-meme-7.jpg" alt="Chandi Meme 7">
+        <img src="images/chandi-meme-8.jpg" alt="Chandi Meme 8">
     </div>
 
-
-<h2>Where it all started</h2>
-
-<div class="center-tweet">
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i have so many photos of them, my phone recognizes <a href="https://twitter.com/search?q=%24billy&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$billy</a> &amp; <a href="https://twitter.com/search?q=%24wif&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$wif</a> as my pets lmao <br><br>alongside my actual cat <a href="https://t.co/fqubwLldWm">pic.twitter.com/fqubwLldWm</a></p>&mdash; b.sol (@bsol_x) <a href="https://twitter.com/bsol_x/status/1810433045494714370?ref_src=twsrc%5Etfw">July 8, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+        </div>
 
     </div>
+    <!-- // end .section -->
+
+
+
+    <div class="section bg-gradient">
+        <div class="container">
+            <div class="call-to-action">
+
+                <div class="solana-logo"><img src="images/solana-logo.png"></div>
+                <h2>ONLY ON SOLANA</h2>
+                <p class="tagline">The Chandi token is only available on Solana. Currently, liquidity pool is only on Raydium, but more pools will be added soon if anyone wants to create one on either Meteora or Orca or anywhere within the Solana ecosystem.</p>
+                <div class="my-4">
+                    <a target="_blank" href="https://bullx.io/terminal?chainId=1399811149&address=5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump" class="btn btn-light icon"><img src="images/bullx-icon.png" alt="icon"> Buy on Bullx</a>
+                    <a target="_blank" href="https://jup.ag/swap/SOL-5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump" class="btn btn-light icon"><img src="images/jupiter-icon.png" alt="icon"> Buy on Jupiter</a>
+                    <a target="_blank" href="https://raydium.io/swap/?inputMint=sol&outputMint=5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump" class="btn btn-light icon"><img src="images/raydium-icon.png" alt="icon"> Buy on Raydium</a>
+                </div>
+                <p class="text-primary"><small><i>Only available on Solana. If you found it elsewhere, it's a fake!</i></small></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+  
+    <!-- // end .section -->
+    <footer class="my-5 text-center">
+        <p class="mb-2"><small>COPYRIGHT © 2024. ALL RIGHTS RESERVED. CHANDI CTO.</small></p>
+        <p class="mb-2"><small>5mwf1jqQQWH4oeGef5ALwB4LMVnEh32LyKK3DM3Wpump</small></p>
+    </footer>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
 
     <script>
         document.getElementById('copyCA').addEventListener('click', function() {
@@ -247,5 +311,5 @@
             }
         });
     </script>
-</body>
+
 </html>
